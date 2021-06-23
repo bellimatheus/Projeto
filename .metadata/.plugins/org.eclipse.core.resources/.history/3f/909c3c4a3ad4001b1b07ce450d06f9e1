@@ -1,0 +1,68 @@
+package Forms;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JButton;
+import javax.swing.JTextArea;
+import javax.swing.JLabel;
+
+public class Login extends JFrame {
+
+	private JPanel contentPane;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					FormLog frame = new FormLog();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public Login() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 349, 277);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JTextArea Usertxt = new JTextArea();
+		Usertxt.setBounds(39, 50, 248, 22);
+		contentPane.add(Usertxt);
+		
+		JTextArea Pwordtxt = new JTextArea();
+		Pwordtxt.setBounds(39, 108, 248, 22);
+		contentPane.add(Pwordtxt);
+		
+		JLabel lblNewLabel = new JLabel("Usuario:");
+		lblNewLabel.setBounds(39, 32, 46, 14);
+		contentPane.add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("Senha:");
+		lblNewLabel_1.setBounds(39, 93, 46, 14);
+		contentPane.add(lblNewLabel_1);
+		
+		JButton btnNewButton = new JButton("Login");
+		btnNewButton.setBounds(39, 176, 89, 23);
+		contentPane.add(btnNewButton);
+		
+		JButton btnNewButton_1 = new JButton("Cancelar");
+		btnNewButton_1.setBounds(198, 176, 89, 23);
+		contentPane.add(btnNewButton_1);
+	}
+}
