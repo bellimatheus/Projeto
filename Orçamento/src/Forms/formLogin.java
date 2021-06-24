@@ -99,5 +99,6 @@ public class formLogin extends JFrame {
 		lblNewLabel.setFont(new Font("Yu Gothic UI Semibold", Font.PLAIN, 14));
 		lblNewLabel.setBounds(150, 11, 81, 29);
 		contentPane.add(lblNewLabel);
+		
 	}
 }

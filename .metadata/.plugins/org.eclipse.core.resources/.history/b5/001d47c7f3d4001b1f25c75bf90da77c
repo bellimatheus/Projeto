@@ -1,0 +1,56 @@
+package Class;
+
+public class Classe {
+	private int id, qtde;
+	private String dia, frn, prod;
+	private double preco;
+	public Classe(int id, int qtde, String dia, String frn, String prod, double preco) {
+		super();
+		this.id = id;
+		this.qtde = qtde;
+		this.dia = dia;
+		this.frn = frn;
+		this.prod = prod;
+		this.preco = preco;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public int getQtde() {
+		return qtde;
+	}
+	public void setQtde(int qtde) {
+		this.qtde = qtde;
+	}
+	public String getDia() {
+		return dia;
+	}
+	public void setDia(String dia) {
+		this.dia = dia;
+	}
+	public String getFrn() {
+		return frn;
+	}
+	public void setFrn(String frn) {
+		this.frn = frn;
+	}
+	public String getProd() {
+		return prod;
+	}
+	public void setProd(String prod) {
+		this.prod = prod;
+	}
+	public double getPreco() {
+		return preco;
+	}
+	public void setPreco(double preco) {
+		this.preco = preco;
+	}
+	
+	
+	
+}
+	
